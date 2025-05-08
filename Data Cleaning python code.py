@@ -4,7 +4,7 @@ import re
 import ast
 
 # Load the data
-df = pd.read_csv('D:Dia\listings.csv')  # Update path if needed
+df = pd.read_csv('D:Dia\listings.csv')  
 
 # 1. Cleaning Price Column
 df['price'] = df['price'].replace('[\$,]', '', regex=True).astype(float)
